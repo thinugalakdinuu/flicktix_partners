@@ -36,7 +36,7 @@ import { format } from "date-fns";
 import { Button } from "@/components/ui/button";
 import { IoChevronBack, IoChevronForward } from "react-icons/io5";
 
-const reserved = () => {
+const Reserved = () => {
   const [data, setData] = useState([]);
   const [filtered, setFiltered] = useState([]);
   const [bookingId, setBookingId] = useState("");
@@ -224,8 +224,8 @@ const reserved = () => {
   );
 };
 
-reserved.getLayout = function getLayout(page) {
+Reserved.getLayout = function getLayout(page) {
   return <DashboardLayout>{page}</DashboardLayout>;
 };
 
-export default reserved;
+export default Reserved;

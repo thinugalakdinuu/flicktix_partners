@@ -36,7 +36,7 @@ import { format } from "date-fns";
 import { Button } from "@/components/ui/button";
 import { IoChevronBack, IoChevronForward } from "react-icons/io5";
 
-const tickets = ({ partner }) => {
+const Tickets = ({ partner }) => {
   const [data, setData] = useState([]);
   const [filtered, setFiltered] = useState([]);
   const [bookingId, setBookingId] = useState("");
@@ -248,8 +248,8 @@ const tickets = ({ partner }) => {
   );
 };
 
-tickets.getLayout = function getLayout(page) {
+Tickets.getLayout = function getLayout(page) {
   return <DashboardLayout>{page}</DashboardLayout>;
 };
 
-export default tickets;
+export default Tickets;

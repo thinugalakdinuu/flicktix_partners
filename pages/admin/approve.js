@@ -8,7 +8,7 @@ const NoSSR = dynamic(() => import('@/components/ApprovePage'), { ssr: false })
 
 
 
-const approve = () => {
+const Approve = () => {
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(true);
   const [details, setDetails] = useState(null);
@@ -96,5 +96,5 @@ const approve = () => {
   return <NoSSR requestDetails={details} />;
 };
 
-export default approve;
+export default Approve;
 

@@ -25,7 +25,7 @@ import {
   PopoverContent,
 } from "@/components/ui/popover"; // Import Popover
 
-const movies = () => {
+const Movies = () => {
   const [schedule, setSchedule] = useState([]);
   const [flatData, setFlatData] = useState([]);
   const [filterMovie, setFilterMovie] = useState("");
@@ -180,8 +180,8 @@ const movies = () => {
   );
 };
 
-movies.getLayout = function getLayout(page) {
+Movies.getLayout = function getLayout(page) {
   return <DashboardLayout>{page}</DashboardLayout>;
 };
 
-export default movies;
+export default Movies;

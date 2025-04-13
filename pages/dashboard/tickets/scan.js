@@ -11,7 +11,7 @@ import {
 } from "@/components/ui/dialog";
 import { client } from "@/lib/client";
 
-const scan = () => {
+const Scan = () => {
   const [message, setMessage] = useState("");
   const [uniqueBookingId, setBookingId] = useState(null);
   const [isOpen, setIsOpen] = useState(false);
@@ -170,8 +170,8 @@ const scan = () => {
   );
 };
 
-scan.getLayout = function getLayout(page) {
+Scan.getLayout = function getLayout(page) {
   return <DashboardLayout>{page}</DashboardLayout>;
 };
 
-export default scan;
+export default Scan;

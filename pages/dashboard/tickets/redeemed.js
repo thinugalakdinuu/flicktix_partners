@@ -36,7 +36,7 @@ import { IoChevronBack, IoChevronForward } from "react-icons/io5";
 
 import { format } from "date-fns";
 
-const redeemed = ({ bookings }) => {
+const Redeemed = ({ bookings }) => {
   const [filtered, setFiltered] = useState(bookings);
   const [bookingId, setBookingId] = useState("");
   const [date, setDate] = useState("");
@@ -255,8 +255,8 @@ export async function getServerSideProps() {
   };
 }
 
-redeemed.getLayout = function getLayout(page) {
+Redeemed.getLayout = function getLayout(page) {
   return <DashboardLayout>{page}</DashboardLayout>;
 };
 
-export default redeemed;
+export default Redeemed;
