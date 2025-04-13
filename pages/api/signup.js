@@ -1,5 +1,5 @@
 // /pages/api/partner/signup.js
-import sanityClient from "@/lib/sanity"; // Your sanity client
+import client from "@/lib/client"; // Your sanity client
 import bcrypt from "bcryptjs";
 
 export default async function handler(req, res) {
@@ -7,7 +7,7 @@ export default async function handler(req, res) {
 
   const { email, password, name } = req.body;
 
-  const existingUser = await sanityClient.fetch(
+  const existingUser = await client.fetch(
     `*[_type == "partner" && email == $email][0]`,
     { email }
   );
@@ -17,7 +17,7 @@ export default async function handler(req, res) {
 
   const hashedPassword = await bcrypt.hash(password, 10);
 
-  const result = await sanityClient.create({
+  const result = await client.create({
     _type: "partner",
     email,
     passwordHash: hashedPassword,
