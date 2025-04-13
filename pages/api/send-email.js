@@ -54,7 +54,7 @@ export default async function handler(req, res) {
       <div style="font-family: Arial, sans-serif; max-width: 600px; margin: auto; padding: 20px; border: 1px solid #eee; border-radius: 10px;">
         <div style="text-align: center; margin-bottom: 20px;">
           <a href="${approvalUrl}">
-            <img src="https://static.vecteezy.com/system/resources/previews/047/656/219/non_2x/abstract-logo-design-for-any-corporate-brand-business-company-vector.jpg" alt="FlickTix Logo" style="width: 150px; height: auto;" />
+            <img src="https://flicktix-app.vercel.app/images/red.png" alt="FlickTix Logo" style="width: 150px; height: auto;" />
           </a>
         </div>
         <h2 style="color: #BA181B;">🎟️ New Partner Signup Request</h2>
