@@ -1,5 +1,5 @@
 // /pages/api/partner/signup.js
-import client from "@/lib/client"; // Your sanity client
+import { client } from "@/lib/client";
 import bcrypt from "bcryptjs";
 
 export default async function handler(req, res) {
